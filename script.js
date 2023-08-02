@@ -9,12 +9,16 @@ imgBox.addEventListener('dragstart', (e) => {
 		e.target.className = 'hide';	
 	} ,0);
 	
+});
+
+imgBox.addEventListener('dragend', (e) => {
+	e.target.className ='imgBox';
 })
 
 for (divBoxes  of divBox) {
 	divBox.addEventListener('dragover', (e) => {
 		e.preventDefault();
-		e.target.className ='imgBox';
+		
 	});
 	divBox.addEventListener('dragenter', () => {
 		
